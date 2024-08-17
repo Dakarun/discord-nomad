@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "discord-nomad"
+version = "0.1.0"
+description = "Discord bot for managing nomad workloads"
+authors = ["Dakarun"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+discord-py = "^2.4.0"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocstrings = "^0.25.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
